@@ -2,10 +2,22 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 body{
-
+    height: 300vh;
 }
 #Logo{
     path{
         fill: $primary;
     }
 } 
+
+// Features
+#Features{
+    .card{
+    
+        background-image: url(https://images.pexels.com/photos/11107016/pexels-photo-11107016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        transition: transform 2s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
