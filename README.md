@@ -1,7 +1,13 @@
 # Project Bootstrap
 
 ## Project Production Config:
-1. Build SASS <pre>npm run build-sass</pre> 
+1. Build SASS 
+````
+npm run build-sass
+```` 
 
 ## Proejct Development Config:
-2. Watch SASS<pre>npm run watch-sass</pre>  
+2. Watch SASS
+````
+npm run watch-sass
+````
