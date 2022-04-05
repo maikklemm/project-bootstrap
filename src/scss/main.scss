@@ -1,9 +1,45 @@
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// -------------------------------------
 
 body{
+<<<<<<< HEAD
 
+=======
+    main {
+        > section {
+
+            padding: map-get($spacers, 4 ) 0;
+            @include media-breakpoint-up(md){
+                padding: map-get($spacers, 6 ) 0;
+            }
+            h2 {
+                margin-bottom: map-get($spacers, 4 );
+            }
+        }
+        > section:first-of-type{
+            @include media-breakpoint-down(md){
+                padding-top: 0;
+            }
+            @include media-breakpoint-between(md,lg){
+                padding-top: map-get($spacers, 4 );
+
+            }
+        }
+      
+    }
+>>>>>>> 8e70f6787f4133831738a1710e16e5b47eb1eef2
 }
+
+// -------------------------------------
+
+#Hero {
+    img{
+        max-height: 40vh;
+        object-fit: cover;
+    }
+}
+
 #Logo{
     path{
         fill: $primary;
@@ -12,8 +48,22 @@ body{
 
 // Features 
 
+<<<<<<< HEAD
 #Features{ 
     .card{ 
         background-image: url(../../jpg/pcpexel.webp);
+=======
+// Features
+#Features{
+    .card{
+        > div{
+            background-image: url(https://images.pexels.com/photos/11107016/pexels-photo-11107016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            transition: transform 0.5s;
+        }
+        &:hover > div{
+            transform: scale(1.1);
+        }
+    
+>>>>>>> 8e70f6787f4133831738a1710e16e5b47eb1eef2
     }
 }
